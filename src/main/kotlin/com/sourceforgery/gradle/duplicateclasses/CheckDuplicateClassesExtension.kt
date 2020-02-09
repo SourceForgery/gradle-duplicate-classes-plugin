@@ -19,4 +19,6 @@ open class CheckDuplicateClassesExtension {
         "gz",
         "tar"
     )
+
+    operator fun<T> invoke(block: CheckDuplicateClassesExtension.() -> T) = block()
 }
